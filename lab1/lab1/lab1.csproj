@@ -43,14 +43,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DataGenerator.cs" />
+    <Compile Include="Enums\Group.cs" />
+    <Compile Include="Enums\Position.cs" />
     <Compile Include="Enums\Role.cs" />
     <Compile Include="Models\Defence.cs" />
     <Compile Include="Models\DefenceParticipants.cs" />
+    <Compile Include="Models\Person.cs" />
     <Compile Include="Models\Student.cs" />
     <Compile Include="Models\Supervisor.cs" />
     <Compile Include="Models\Thesis.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Queries.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

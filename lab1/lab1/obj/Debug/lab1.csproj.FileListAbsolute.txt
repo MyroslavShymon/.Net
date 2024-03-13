@@ -6,3 +6,11 @@ D:\Документи\КПІ\Звіти\4 семестр\.Net\Лаби\lab1\lab1
 D:\Документи\КПІ\Звіти\4 семестр\.Net\Лаби\lab1\lab1\obj\Debug\lab1.csproj.CoreCompileInputs.cache
 D:\Документи\КПІ\Звіти\4 семестр\.Net\Лаби\lab1\lab1\obj\Debug\lab1.exe
 D:\Документи\КПІ\Звіти\4 семестр\.Net\Лаби\lab1\lab1\obj\Debug\lab1.pdb
+D:\Документи\КПІ\Звіти\4 семестр\.Net\Програми\lab1\lab1\bin\Debug\lab1.exe.config
+D:\Документи\КПІ\Звіти\4 семестр\.Net\Програми\lab1\lab1\bin\Debug\lab1.exe
+D:\Документи\КПІ\Звіти\4 семестр\.Net\Програми\lab1\lab1\bin\Debug\lab1.pdb
+D:\Документи\КПІ\Звіти\4 семестр\.Net\Програми\lab1\lab1\obj\Debug\lab1.csproj.AssemblyReference.cache
+D:\Документи\КПІ\Звіти\4 семестр\.Net\Програми\lab1\lab1\obj\Debug\lab1.csproj.SuggestedBindingRedirects.cache
+D:\Документи\КПІ\Звіти\4 семестр\.Net\Програми\lab1\lab1\obj\Debug\lab1.csproj.CoreCompileInputs.cache
+D:\Документи\КПІ\Звіти\4 семестр\.Net\Програми\lab1\lab1\obj\Debug\lab1.exe
+D:\Документи\КПІ\Звіти\4 семестр\.Net\Програми\lab1\lab1\obj\Debug\lab1.pdb

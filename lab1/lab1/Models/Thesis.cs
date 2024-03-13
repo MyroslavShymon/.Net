@@ -11,7 +11,7 @@ namespace lab1.Models
         public int Id { get; set; }
         public string Title { get; set; } // Назва диплому
         public int PagesCount { get; set; } // Кількість сторінок у дипломній роботі
-        public double Grade { get; set; } // Оцінка за дипломну роботу
+        public int Grade { get; set; } // Оцінка за дипломну роботу
         public bool IsPublished { get; set; } // Опублікована чи ні
         public List<Student> _students { get; set; } = new List<Student>(); // Багато студентів можуть писати один диплом
 
@@ -42,13 +42,20 @@ namespace lab1.Models
             }
         }
 
-        public Thesis(int id, string title, int pagesCount, double grade, bool isPublished)
+        public Thesis(int id, string title, int pagesCount, int grade, bool isPublished)
         {
             Id = id;
             Title = title;
             PagesCount = pagesCount;
             Grade = grade;
             IsPublished = isPublished;
+        }
+
+        public override string ToString()
+        {
+            string studentsList = Students.Any() ? string.Join(", ", Students.Select(s => $"{s.LastName} {s.FirstName}")) : "Немає студентів";
+
+            return $"ID: {Id}, Назва: {Title}, Кількість сторінок: {PagesCount}, Оцінка: {Grade}, Опублікована: {IsPublished}, Студенти: {studentsList}";
         }
     }
 }

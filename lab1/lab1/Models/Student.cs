@@ -7,11 +7,9 @@ using System.Threading.Tasks;
 namespace lab1.Models
 {
     internal class Student
+        : Person
     {
-        public int Id { get; set; }
-        public string Fullname { get; set; } // ПІБ
         public string Group { get; set; } // Група
-        public DateTime BirthDate { get; set; } // Дата народження
         public double AverageGrade { get; set; } // Середній бал
 
         private Thesis _thesis;
@@ -58,13 +56,16 @@ namespace lab1.Models
             }
         }
 
-        public Student(int id, string fullName, string group, DateTime birthDate, double averageGrade)
+        public Student(int id, string group, double averageGrade, string lastName, string firstName, string middleName, DateTime birthDate)
+            : base(id, lastName, firstName, middleName, birthDate)
         {
-            Id = id;
-            Fullname = fullName;
             Group = group;
-            BirthDate = birthDate;
             AverageGrade = averageGrade;
+        }
+
+        public override string ToString()
+        {
+            return $"ID: {Id}, Прізвище: {LastName}, Ім'я: {FirstName}, Група: {Group}, Середній бал: {AverageGrade}, {(Thesis != null ? $" Диплом: {Supervisor.LastName}" : "Нема доплому")}, {(Supervisor != null ? $"Керівник: {Supervisor.LastName}" : "Нема керівника")}";
         }
     }
 }
