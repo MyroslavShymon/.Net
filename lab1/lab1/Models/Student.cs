@@ -65,7 +65,7 @@ namespace lab1.Models
 
         public override string ToString()
         {
-            return $"ID: {Id}, Прізвище: {LastName}, Ім'я: {FirstName}, Група: {Group}, Середній бал: {AverageGrade}, {(Thesis != null ? $" Диплом: {Supervisor.LastName}" : "Нема доплому")}, {(Supervisor != null ? $"Керівник: {Supervisor.LastName}" : "Нема керівника")}";
+            return $"ID: {Id}, Прізвище: {LastName}, Ім'я: {FirstName}, Дата народження: {BirthDate.ToShortDateString()}, Група: {Group}, Середній бал: {AverageGrade}, {(Thesis != null ? $" Диплом: {Supervisor.LastName}" : "Нема доплому")}, {(Supervisor != null ? $"Керівник: {Supervisor.LastName}" : "Нема керівника")}";
         }
     }
 }

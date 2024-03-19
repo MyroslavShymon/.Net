@@ -1,6 +1,7 @@
 ﻿using lab1.Models;
 using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Runtime.Serialization;
 using System.Text;
@@ -18,6 +19,12 @@ namespace lab1
 
         static void Main()
         {
+            CultureInfo culture = new CultureInfo("uk-UA");
+            CultureInfo.DefaultThreadCurrentCulture = culture;
+            CultureInfo.DefaultThreadCurrentUICulture = culture;
+
+            Console.OutputEncoding = Encoding.UTF8;
+
             while (true)
             {
                 Console.WriteLine("1. Generate data");
@@ -61,22 +68,29 @@ namespace lab1
 
         static void GenerateData()
         {
-            Console.Write("Enter the number of defences to generate: ");
-            int defencesCount = int.Parse(Console.ReadLine());
+            Console.WriteLine("Do you want to enter the same number of data for all categories? (Y/N)");
+            string response = Console.ReadLine().ToUpper();
 
-            Console.Write("Enter the number of supervisors to generate: ");
-            int supervisorsCount = int.Parse(Console.ReadLine());
+            if (response == "Y")
+            {
+                int count = GetValidNumber("Enter the number of data to generate: ");
 
-            Console.Write("Enter the number of students to generate: ");
-            int studentsCount = int.Parse(Console.ReadLine());
+                GenerateObjects(count, count, count, count, count);
+            }
+            else
+            {
+                int defencesCount = GetValidNumber("Enter the number of defences to generate: ");
+                int supervisorsCount = GetValidNumber("Enter the number of supervisors to generate: ");
+                int studentsCount = GetValidNumber("Enter the number of students to generate: ");
+                int thesesCount = GetValidNumber("Enter the number of theses to generate: ");
+                int defenceParticipantsCount = GetValidNumber("Enter the number of defence participants to generate: ");
 
-            Console.Write("Enter the number of theses to generate: ");
-            int thesesCount = int.Parse(Console.ReadLine());
+                GenerateObjects(defencesCount, supervisorsCount, studentsCount, thesesCount, defenceParticipantsCount);
+            }
+        }
 
-            Console.Write("Enter the number of defence participants to generate: ");
-            int defenceParticipantsCount = int.Parse(Console.ReadLine());
-
-            // Генеруємо дані
+        static void GenerateObjects(int defencesCount, int supervisorsCount, int studentsCount, int thesesCount, int defenceParticipantsCount)
+        {
             defences = DataGenerator.GenerateDefences(defencesCount);
             supervisors = DataGenerator.GenerateSupervisors(supervisorsCount);
             students = DataGenerator.GenerateStudents(studentsCount, supervisors);
@@ -86,6 +100,15 @@ namespace lab1
             ShowGeneratedData();
         }
 
+        static int GetValidNumber(string message)
+        {
+            int number;
+            do
+            {
+                Console.Write(message);
+            } while (!int.TryParse(Console.ReadLine(), out number) || number <= 0);
+            return number;
+        }
         static void ShowGeneratedData()
         {
             // Виводимо згенеровані дані

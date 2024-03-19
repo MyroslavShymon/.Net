@@ -21,7 +21,26 @@ namespace lab1
         {
             while (true)
             {
-
+                Console.WriteLine("1 - Отримати всі захисти:");
+                Console.WriteLine("2 - Отримати тези, які пише більше одного студента і вони не опубліковані:");
+                Console.WriteLine("3 - Отримати викладача з більш ніж одним студентом в якого середній бал більше 75:");
+                Console.WriteLine("4 - Додати нового студента і відобразити оновлений список:");
+                Console.WriteLine("5 - Отримати диплом з ПІБ студента за умови, що диплом опублікований:");
+                Console.WriteLine("6 - Отримати групи з кількістю студентів якщо студентів більше одного:");
+                Console.WriteLine("7 - Отримати посортованих студентів в яких середній бал більше 70:");
+                Console.WriteLine("8 - Отримати об'єднаних студентів з різними умовами:");
+                Console.WriteLine("9 - Аналізування статей за кількістю сторінок:");
+                Console.WriteLine("10 - Вибір студентів з першого списку, яких немає в другому списку та отримання максимальної оцінки за диплом:");
+                Console.WriteLine("11 - Порівнюємо два списка тезисів чи вони мають ідентичні id:");
+                Console.WriteLine("12 - Обчислити середній бал студентів які вчаться на ІС(100+ записів):");
+                Console.WriteLine("13 - Найбільший час для захисту:");
+                Console.WriteLine("14 - Отримати посортований вік:");
+                Console.WriteLine("15 - Обєднали participants і defences:");
+                Console.WriteLine("16 - Отримати захисти з id учасників захисту:");
+                Console.WriteLine("17 - Чи є студент серед учасників:");
+                Console.WriteLine("18 - Показати в яких групах навчаються студенти керівника:");
+                Console.WriteLine("19 - Отримати групу з середнім балом здачі тезису:");
+                Console.WriteLine("20 - Отримати статистику по віку:");
                 Console.Write("Select a query (1-20) or enter '0' to exit: ");
                 string choice = Console.ReadLine();
 
@@ -42,7 +61,7 @@ namespace lab1
                         AddStudentAndDisplay(students);
                         break;
                     case "5":
-                        SupervisorsWithMostAdvisees(theses);
+                        GetThesesWithStudentFullNameByCondition(theses);
                         break;
                     case "6":
                         GetGoupsWithCountOfStudents(students);
@@ -57,38 +76,37 @@ namespace lab1
                         PerformThesisAnalysis(theses, theses);
                         break;
                     case "10":
-                        GetMaxGrade(students, students);
+                        GetMaxGrade(students);
                         break;
                     case "11":
-                        JoinStudentNames(students, students);
-                        break;
-                    case "12":
-                        JoinParticipantsAndDefences(defences, defenceParticipants);
-                        break;
-                    case "13":
-                        DisplayDefenceParticipantsInfo(defences, defenceParticipants);
-                        break;
-                        //
-                    case "14":
-                        CountUniqueDefencesWithJoin(defenceParticipants);
-                        break;
-                    case "15":
-                        FindTotalStudentsWithThesisWithJoin(students);
-                        break;
-                    case "16":
-                        FindMaxDefenceTimeWithGroupBy(defences);
-                        break;
-                    case "17":
-                        SkipFirstThreeDefencesWithJoin(defences, defenceParticipants);
-                        break;
-                    case "18":
-                        FindParticipantsWithSameSupervisor(defenceParticipants);
-                        break;
-                    case "19":
                         CompareThesisStudents(theses, theses);
                         break;
-                    case "20":
+                    case "12":
                         CalculateAverageGradeOfThesisWithCondition(students);
+                        break;
+                    case "13":
+                        FindMaxDefenceTimeWithGroupBy(defences);
+                        break;
+                    case "14":
+                        GetSortedAges(students, supervisors);
+                        break;
+                    case "15":
+                        JoinParticipantsAndDefences(defences, defenceParticipants);
+                        break;
+                    case "16":
+                        DisplayDefenceParticipantsInfo(defences, defenceParticipants);
+                        break;
+                    case "17":
+                        IsThereStudentAmongParticipants(defenceParticipants, students);
+                        break;
+                    case "18":
+                        getInWhichGroupsSupervisorsStudentsStudy(students, supervisors);
+                        break;
+                    case "19":
+                        getGroupWithAverageScoreOfpPassingThesis(students);
+                        break;
+                    case "20":
+                        getDataAbout(students);
                         break;
                     default:
                         Console.WriteLine("Invalid choice. Please try again.");
@@ -105,21 +123,6 @@ namespace lab1
             foreach (var item in query)
             {
                 Console.WriteLine(item);
-            }
-        }
-
-        public static void AddStudentAndDisplay(List<Student> students)
-        {
-            var newStudent = new Student(100, "IT-101", 85.5, "New", "Student", "Middle", DateTime.Now);
-
-            var updatedStudents = students
-                .Append(newStudent)
-                .ToList();
-
-            Console.WriteLine("\nThe query adds a new student using Append and displays the updated list:\n");
-            foreach (var student in updatedStudents)
-            {
-                Console.WriteLine(student.ToString());
             }
         }
 
@@ -148,27 +151,22 @@ namespace lab1
             }
         }
 
-        private static void GetGoupsWithCountOfStudents(List<Student> students)
+        public static void AddStudentAndDisplay(List<Student> students)
         {
-            var query = (
-                        from student in students
-                        group student by student.Group into groupedStudents
-                        orderby groupedStudents.Count() descending
-                        select new
-                        {
-                            Group = groupedStudents.Key,
-                            StudentsCount = groupedStudents.Count()
-                        }
-                     );
+            var newStudent = new Student(100, "IT-101", 85.5, "New", "Student", "Middle", DateTime.Now);
 
-            Console.WriteLine("\nGet goups with count of students with descending order:\n");
-            foreach (var item in query)
+            var updatedStudents = students
+                .Append(newStudent)
+                .ToList();
+
+            Console.WriteLine("\nThe query adds a new student using Append and displays the updated list:\n");
+            foreach (var student in updatedStudents)
             {
-                Console.WriteLine($"{item.Group}: {item.StudentsCount}");
+                Console.WriteLine(student.ToString());
             }
         }
 
-        private static void SupervisorsWithMostAdvisees(List<Thesis> theses)
+        private static void GetThesesWithStudentFullNameByCondition(List<Thesis> theses)
         {
             var query = theses
                 .SelectMany(
@@ -189,39 +187,39 @@ namespace lab1
 
         }
 
-        private static void CalculateAverageGradeOfThesisWithCondition(List<Student> students)
+        private static void GetGoupsWithCountOfStudents(List<Student> students)
         {
-            var averageGrade = (from student in students
-                                where student.Group.StartsWith("IS") && student.AverageGrade > 60
-                                let thesis = student.Thesis
-                                where thesis != null && thesis.IsPublished
-                                select thesis.Grade)
-                                .DefaultIfEmpty(0)
-                                .Average();
+            var query = (
+                        from student in students
+                        group student by student.Group into groupedStudents
+                        orderby groupedStudents.Count() descending
+                        where groupedStudents.Count() > 1
+                        select new
+                        {
+                            Group = groupedStudents.Key,
+                            StudentsCount = groupedStudents.Count()
+                        }
+                     );
 
-            Console.WriteLine($"\nCalculate avarage grade of theses that student form Is group with avarage grade more than 60 {averageGrade}\n");
+            Console.WriteLine("\nGet goups with count of students with descending order:\n");
+            Console.WriteLine("Група\tКількість");
+            foreach (var item in query)
+            {
+                Console.WriteLine($"{item.Group}\t{item.StudentsCount}");
+            }
         }
-
-        public static void CompareThesisStudents(List<Thesis> thesis1, List<Thesis> thesis2)
-        {
-            var areEqual = thesis1
-                .Select(t1 => t1.Students.Select(s => s.Id).ToList())
-                .SequenceEqual(thesis2.Select(t2 => t2.Students.Select(s => s.Id).ToList()));
-
-            Console.WriteLine($"\nThe query compares the students in two different theses using SequenceEqual: {areEqual}\n");
-        }
-
 
         private static void getOrderedStudentsWithAvarageGradeMoreThan70(List<Student> students)
         {
             var query = students
-                    .OrderBy(student => student.Group)
-                    .ThenBy(student => student.LastName)
                     .Skip(5) // Пропустити перші 5 елементів
                     .Where(student => student.AverageGrade > 70)
+                    .OrderBy(student => student.AverageGrade)
+                    .ThenBy(student => student.LastName)
+                    .ThenBy(student => student.Group)
                     .Reverse();
 
-            Console.WriteLine("\nGet students ordered by Group and LastName and Skip first 5 elements also students must have avarage grade more than 70: \n");
+            Console.WriteLine("\nGet students ordered by Group and LastName, AverageGrade and Skip first 5 elements also students must have avarage grade more than 70: \n");
             foreach (var item in query)
             {
                 Console.WriteLine(item.ToString());
@@ -256,28 +254,45 @@ namespace lab1
 
         private static void PerformThesisAnalysis(List<Thesis> theses1, List<Thesis> theses2)
         {
-            var result = (from thesis in theses1.Intersect(theses2)
-                          group thesis by new { thesis.Grade, thesis.PagesCount } into grouped
+            var query = (from thesis in theses1.Intersect(theses2)
+                          group thesis by new { thesis.IsPublished } into grouped
                           let totalTheses = grouped.Count()
-                          let totalCommonPages = grouped.Sum(t => t.PagesCount)
-                          orderby grouped.Key.Grade descending
+                          let maxPagesCount = grouped.Max(t => t.PagesCount)
+                          let minPagesCount = grouped.Min(t => t.PagesCount)
+                          let avaragePagesCount = grouped.Average(t => t.PagesCount)
+                         orderby grouped.Key.IsPublished descending
                           select new
                           {
-                              Grade = grouped.Key.Grade,
-                              PagesCount = grouped.Key.PagesCount,
+                              IsPublished = grouped.Key.IsPublished,
                               TotalTheses = totalTheses,
-                              TotalCommonPages = totalCommonPages
-                          }).FirstOrDefault();
+                              maxPagesCount = maxPagesCount,
+                              minPagesCount = minPagesCount,
+                              avaragePagesCount = avaragePagesCount,
+                          })
+                          /*.FirstOrDefault()*/;
+            Console.WriteLine("Опублікованість\t\tКількість дипломів\tМакс\tМін\tСередня ");
+            foreach (var item in query)
+            {
+                string isPublishedString = item.IsPublished ? "Опублі. статті: " : "Не опуб. статті: ";
+                Console.WriteLine($"{isPublishedString}\t\t{item.TotalTheses}\t{item.maxPagesCount}\t{item.minPagesCount}\t{item.avaragePagesCount}");
+            }
 
-
-            Console.WriteLine("\nThe query determines the common characteristics for the theses that are shared between the two lists of theses (theses1 and theses2), including the average grade (Grade), the number of pages (PagesCount), the total number of such theses (TotalTheses), and the total number of pages for these theses (TotalCommonPages ), and returns the first element sorted in descending order of value:\n");
-            Console.WriteLine($"Common Theses Count: {result?.TotalTheses}");
-            Console.WriteLine($"Highest Rated Thesis - Grade: {result?.Grade}, Pages Count: {result?.PagesCount}, Total Theses: {result?.TotalTheses}");
-            Console.WriteLine($"Total Pages for Common Theses: {result?.TotalCommonPages}");
         }
 
-        private static void GetMaxGrade(List<Student> students1, List<Student> students2)
+        private static void GetMaxGrade(List<Student> students1)
         {
+            var newStudent1 = new Student(100, "IT-101", 85.5, "New1", "Student1", "Middle1", DateTime.Now);
+            var newStudent2 = new Student(111, "IT-111", 90, "New2", "Student2", "Middle2", DateTime.Now);
+            var newThesis1 = new Thesis(122, "Title 1", 66, 77, true);
+            var newThesis2 = new Thesis(123, "Title 2", 77, 88, false);
+            newThesis1.Students.Add(newStudent1);
+            newThesis2.Students.Add(newStudent2);
+            newStudent1.Thesis = newThesis1;
+            newStudent2.Thesis = newThesis2;
+            List<Student> students2 = new List<Student>();
+            students2.Add(newStudent1);
+            students2.Add(newStudent2);
+
             int maxGrade = students1
                 .Except(students2)
                 .Where(student => student.Thesis != null)
@@ -291,16 +306,60 @@ namespace lab1
             Console.WriteLine($"Max grade is:{maxGrade}");
         }
 
-        private static void JoinStudentNames(List<Student> students1, List<Student> students2)
+        public static void CompareThesisStudents(List<Thesis> thesis1, List<Thesis> thesis2)
         {
-            var query = from student1 in students1
-                                 join student2 in students2 on student1.FirstName equals student2.FirstName
-                                 select student1.FirstName;
+            var areEqual = thesis1
+                .Select(t1 => t1.Id)
+                .SequenceEqual(thesis2.Select(t2 => t2.Id));
+            Console.WriteLine($"\nThe query compares theses using SequenceEqual: {areEqual}\n");
+        }
 
-            Console.WriteLine("\nassociation of students by name:\n");
-            foreach (var item in query)
+        private static void CalculateAverageGradeOfThesisWithCondition(List<Student> students)
+        {
+            var averageGrade = (from student in students
+                                where student.Group.StartsWith("IS") && student.AverageGrade > 60
+                                let thesis = student.Thesis
+                                where thesis != null && thesis.IsPublished
+                                select thesis.Grade)
+                                .DefaultIfEmpty(0)
+                                .Average();
+
+            Console.WriteLine($"\nCalculate avarage grade of theses that student form Is group with avarage grade more than 60 {averageGrade}\n");
+        }
+
+        private static void FindMaxDefenceTimeWithGroupBy(List<Defence> defences)
+        {
+            var maxDefenceTime = defences.GroupBy(d => d.Id)
+                                         .Select(group => new
+                                         {
+                                             DefenceId = group.Key,
+                                             MaxScheduledDefenceTime = group.Max(d => d.ScheduledDefenceTime)
+                                         })
+                                         .Max(result => result.MaxScheduledDefenceTime);
+
+            Console.WriteLine($"\nThe query finds the maximum defence time among all defences with group by: {maxDefenceTime}\n");
+        }
+
+        private static void GetSortedAges(List<Student> students, List<Supervisor> supervisors)
+        {
+            var studentsAndSupervisors = students.Select(s => new
             {
-                Console.WriteLine(item.ToString());
+                Name = $"{s.FirstName} {s.LastName}",
+                Age = (DateTime.Now - s.BirthDate).Days / 365,
+                Role = Role.Student
+            })
+            .Union(supervisors.Select(s => new
+            {
+                Name = $"{s.FirstName} {s.LastName}",
+                Age = (DateTime.Now - s.BirthDate).Days / 365,
+                Role = Role.Supervisor
+            }))
+            .OrderBy(x => x.Age)
+            .ThenBy(x=> x.Role);
+
+            foreach (var person in studentsAndSupervisors)
+            {
+                Console.WriteLine($"Ім'я: {person.Name}, Вік: {person.Age} років, Роль: {person.Role}");
             }
         }
 
@@ -336,91 +395,69 @@ namespace lab1
             }
         }
 
-        private static void CountUniqueDefencesWithJoin(List<DefenceParticipants> participants)
+        private static void IsThereStudentAmongParticipants(List<DefenceParticipants> participants, List<Student> students)
         {
-            var uniqueDefencesCount = (from participant in participants
-                                       join defence in participants on participant.DefenceId equals defence.DefenceId
-                                       select participant.DefenceId).Distinct().Count();
+            var joinedParticipants = from participant in participants
+                                     join student in students on participant.ParticipantId equals student.Id
+                                     select new { Participant = participant, Student = student };
 
-            Console.WriteLine($"\nThe query counts the number of unique defences with join and group by: {uniqueDefencesCount}\n");
+            bool hasStudentParticipant = joinedParticipants.Any(jp => jp.Participant.Role == Role.Student);
+
+            Console.WriteLine($"Is there a student among the participants?: {hasStudentParticipant}");
         }
 
-
-        private static void FindTotalStudentsWithThesisWithJoin(List<Student> students)
+        private static void getInWhichGroupsSupervisorsStudentsStudy(List<Student> students, List<Supervisor> supervisors)
         {
-            var totalStudentsWithThesis = (from student in students
-                                           join thesis in students on student.Id equals thesis.Id
-                                           select student).Count();
+            var supervisorStudentsGroups = from student in students
+                                           join supervisor in supervisors on student.Supervisor.Id equals supervisor.Id
+                                           group student by new { supervisor.FirstName, supervisor.LastName } into g
+                                           select new
+                                           {
+                                               SupervisorName = $"{g.Key.FirstName} {g.Key.LastName}",
+                                               Groups = string.Join(", ", g.Select(s => s.Group))
+                                           };
 
-            Console.WriteLine($"\nThe query finds the total number of students with theses with join and group by: {totalStudentsWithThesis}\n");
-        }
-
-        private static void FindMaxDefenceTimeWithGroupBy(List<Defence> defences)
-        {
-            var maxDefenceTime = defences.GroupBy(d => d.Id)
-                                         .Select(group => new
-                                         {
-                                             DefenceId = group.Key,
-                                             MaxScheduledDefenceTime = group.Max(d => d.ScheduledDefenceTime)
-                                         })
-                                         .Max(result => result.MaxScheduledDefenceTime);
-
-            Console.WriteLine($"\nThe query finds the maximum defence time among all defences with group by: {maxDefenceTime}\n");
-        }
-
-        private static void FindStudentsWithoutSupervisorWithJoin(List<Student> students)
-        {
-            var studentsWithoutSupervisor = from student in students
-                                            join supervisor in students on student.Supervisor.Id equals supervisor.Id into studentSupervisors
-                                            where !studentSupervisors.Any()
-                                            select student;
-
-            Console.WriteLine("\nThe query returns a list of students without a supervisor with join and group by:\n");
-            foreach (var student in studentsWithoutSupervisor)
+            foreach (var group in supervisorStudentsGroups)
             {
-                Console.WriteLine($"Student: {student.LastName} {student.FirstName}");
+                Console.WriteLine($"Супервізор: {group.SupervisorName}, Групи студентів: {group.Groups}");
             }
         }
 
-        private static void SkipFirstThreeDefencesWithJoin(List<Defence> defences, List<DefenceParticipants> participants)
+        private static void getGroupWithAverageScoreOfpPassingThesis(List<Student> students)
         {
-            var result = (from defence in defences.Skip(3)
-                          join participant in participants on defence.Id equals participant.DefenceId into defenceParticipants
-                          select new
-                          {
-                              DefenceName = defence.Name,
-                              ParticipantsCount = defenceParticipants.Count()
-                          }).ToList();
+            var groupsAverageGrade = from student in students
+                                     group student by student.Group into g
+                                     let averageGrade = g.Average(s => s.AverageGrade)
+                                     orderby averageGrade descending
+                                     select new
+                                     {
+                                         Group = g.Key,
+                                         AverageGrade = averageGrade
+                                     };
 
-            Console.WriteLine("\nThe query skips the first three defences, displays the rest, and shows the number of participants in each defence with join and group by:\n");
-            foreach (var item in result)
+            foreach (var group in groupsAverageGrade)
             {
-                Console.WriteLine($"Defence: {item.DefenceName}, Participants Count: {item.ParticipantsCount}");
+                Console.WriteLine($"Група: {group.Group}, Середній бал: {group.AverageGrade}");
             }
         }
 
-        private static void FindParticipantsWithSameSupervisor(List<DefenceParticipants> defenceParticipants)
+        private static void getDataAbout(List<Student> students)
         {
-            var result = defenceParticipants
-                .Join(defenceParticipants,
-                      dp1 => dp1.DefenceId,
-                      dp2 => dp2.DefenceId,
-                      (dp1, dp2) => new
-                      {
-                          SupervisorId = dp1.ParticipantId,
-                          StudentId = dp2.ParticipantId
-                      })
-                .Where(pair => pair.SupervisorId != pair.StudentId)
-                .GroupBy(pair => new { pair.SupervisorId, pair.StudentId })
-                .Where(group => group.Count() > 1);
+            var groupedStudents = from student in students
+                                  let age = (DateTime.Now - student.BirthDate).Days / 365
+                                  group new { student, age } by age / 10 into ageGroup // Групуємо студентів за віком у десятки років
+                                  orderby ageGroup.Key // Сортуємо за групою віку
+                                  select new
+                                  {
+                                      AgeGroup = $"{ageGroup.Key * 10}-{ageGroup.Key * 10 + 9}", // Рядок з віковою групою
+                                      AverageAge = ageGroup.Average(x => x.age), // Середній вік у групі
+                                      StudentsCount = ageGroup.Count(), // Кількість студентів у групі
+                                  };
 
-            Console.WriteLine("\nThe query finds participants with the same supervisor using join, group by, and count:\n");
-            foreach (var group in result)
+            foreach (var group in groupedStudents)
             {
-                Console.WriteLine($"Common Supervisor: {group.Key.SupervisorId}, Participants: {string.Join(", ", group.Select(pair => pair.StudentId))}");
+                Console.WriteLine($"Вікова група: {group.AgeGroup}, Середній вік: {group.AverageAge}, Кількість студентів: {group.StudentsCount}");
             }
         }
-
-
     }
 }
