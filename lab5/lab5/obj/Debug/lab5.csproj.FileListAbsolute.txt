@@ -1,0 +1,8 @@
+D:\Документи\КПІ\Звіти\4 семестр\.Net\Програми\lab5\lab5\bin\Debug\lab5.exe.config
+D:\Документи\КПІ\Звіти\4 семестр\.Net\Програми\lab5\lab5\bin\Debug\lab5.exe
+D:\Документи\КПІ\Звіти\4 семестр\.Net\Програми\lab5\lab5\bin\Debug\lab5.pdb
+D:\Документи\КПІ\Звіти\4 семестр\.Net\Програми\lab5\lab5\obj\Debug\lab5.csproj.AssemblyReference.cache
+D:\Документи\КПІ\Звіти\4 семестр\.Net\Програми\lab5\lab5\obj\Debug\lab5.csproj.SuggestedBindingRedirects.cache
+D:\Документи\КПІ\Звіти\4 семестр\.Net\Програми\lab5\lab5\obj\Debug\lab5.csproj.CoreCompileInputs.cache
+D:\Документи\КПІ\Звіти\4 семестр\.Net\Програми\lab5\lab5\obj\Debug\lab5.exe
+D:\Документи\КПІ\Звіти\4 семестр\.Net\Програми\lab5\lab5\obj\Debug\lab5.pdb

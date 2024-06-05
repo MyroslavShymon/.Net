@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Events>
+  <Event Time="07.05.2024 11:11:37" Level="Normal" Source="Main">Application started</Event>
+  <Event Time="07.05.2024 11:11:37" Level="Error" Source="Database">Connection failed</Event>
+  <Event Time="07.05.2024 11:11:37" Level="Warning" Source="Main">Memory usage high</Event>
+  <Event Time="07.05.2024 11:14:00" Level="Normal" Source="Main">Application started</Event>
+  <Event Time="07.05.2024 11:14:00" Level="Error" Source="Database">Connection failed</Event>
+  <Event Time="07.05.2024 11:14:00" Level="Warning" Source="Main">Memory usage high</Event>
+  <Event Time="07.05.2024 11:14:02" Level="Normal" Source="Main">Application started</Event>
+  <Event Time="07.05.2024 11:14:02" Level="Error" Source="Database">Connection failed</Event>
+  <Event Time="07.05.2024 11:14:02" Level="Warning" Source="Main">Memory usage high</Event>
+  <Event Time="07.05.2024 11:14:05" Level="Normal" Source="Main">Application started</Event>
+  <Event Time="07.05.2024 11:14:05" Level="Error" Source="Database">Connection failed</Event>
+  <Event Time="07.05.2024 11:14:05" Level="Warning" Source="Main">Memory usage high</Event>
+  <Event Time="07.05.2024 11:17:08" Level="Normal" Source="Main">Application started</Event>
+  <Event Time="07.05.2024 11:17:08" Level="Error" Source="Database">Connection failed</Event>
+  <Event Time="07.05.2024 11:17:08" Level="Warning" Source="Main">Memory usage high</Event>
+  <Event Time="14.05.2024 15:54:14" Level="Normal" Source="Main">Application started</Event>
+  <Event Time="14.05.2024 15:54:14" Level="Error" Source="Database">Connection failed</Event>
+  <Event Time="14.05.2024 15:54:14" Level="Warning" Source="Main">Memory usage high</Event>
+  <Event Time="14.05.2024 16:26:05" Level="Normal" Source="Main">Application started</Event>
+  <Event Time="14.05.2024 16:26:05" Level="Error" Source="Database">Connection failed</Event>
+  <Event Time="14.05.2024 16:26:05" Level="Warning" Source="Main">Memory usage high</Event>
+  <Event Time="28.05.2024 16:30:36" Level="Normal" Source="Main">Application started</Event>
+  <Event Time="28.05.2024 16:30:36" Level="Error" Source="Database">Connection failed</Event>
+  <Event Time="28.05.2024 16:30:36" Level="Warning" Source="Main">Memory usage high</Event>
+</Events>

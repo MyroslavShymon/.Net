@@ -1,0 +1,728 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<sim-project version="14.30" multi-file="no" uid="simp404df70d2d6f4585b41b93b67d5bc153" creation-date="05/21/2024 15:47:49">
+  <meta>
+    <name>class diagram</name>
+    <authors> </authors>
+    <description />
+  </meta>
+  <counters models="2">
+    <entity-names />
+    <entity-ids>
+      <counter>
+        <item-type type-id="package" type="Package" />
+        <value>2</value>
+      </counter>
+    </entity-ids>
+    <diagrams>
+      <counter>
+        <type>SoftwareIdeasModeler.Core.Diagrams.UmlDiagrams.UmlPackageDiagram</type>
+        <value>1</value>
+      </counter>
+      <counter>
+        <type>SoftwareIdeasModeler.Core.Diagrams.UmlDiagrams.UmlClassDiagram</type>
+        <value>1</value>
+      </counter>
+    </diagrams>
+    <fields />
+  </counters>
+  <alias-groups />
+  <management uid="md-6a993a36b5a048e8a579e2f5c4c88b4e" name="" task-id-sequence="0">
+    <persons>
+      <person id="">
+        <first-name />
+        <last-name />
+        <role />
+        <e-mail />
+        <phone-number />
+        <description />
+        <color>#00000000</color>
+      </person>
+    </persons>
+    <teams />
+    <sprints />
+    <projects />
+    <modules />
+    <tasks />
+    <to-dos />
+  </management>
+  <glossary id="glsr-fb5adf0bff31412686cf24e0f43d946f" name="" order-index="-1" />
+  <types default="UML">
+    <type-sets>
+      <type-set file="UmlTypes.xml" />
+    </type-sets>
+    <custom-types>
+      <parameters />
+      <types>
+        <type id="ITextProcessor" name="ITextProcessor" />
+        <type id="CSharp.string" tid="string" name="string" nullable="true" />
+      </types>
+    </custom-types>
+  </types>
+  <items />
+  <models>
+    <model id="p4bcb3672e0a44d059df62b1730f92dc8_523775768" name="Model1" namespace="" order-index="1">
+      <meta>
+        <authors>
+          <author> </author>
+        </authors>
+        <description />
+        <creation-date>05/21/2024 15:47:49</creation-date>
+        <change-date>01/01/0001 00:00:00</change-date>
+        <revision-count>0</revision-count>
+        <version />
+      </meta>
+      <abstract-items>
+        <item id="b8ebf63e9e954d488a9309a6b7c467a4" cid="PKG001" type="package" creator="" creation-date="05/21/2024 15:48:00">
+          <tagged-values>
+            <tagged-value id="tv7b40475fba96412e8db54a223177c49d" name="namespace" type="text" multiple="false" hidden="false" value="" />
+            <tagged-value id="tv52114ef906424ee4a3478636affaef39" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="" />
+          </tagged-values>
+        </item>
+      </abstract-items>
+      <sub-models>
+        <model id="p338c4dfaba74409fa28897606a51264a_949445866" name="" namespace="" order-index="2">
+          <meta>
+            <authors>
+              <author> </author>
+            </authors>
+            <description />
+            <creation-date>05/21/2024 15:48:00</creation-date>
+            <change-date>01/01/0001 00:00:00</change-date>
+            <revision-count>0</revision-count>
+            <version />
+          </meta>
+          <tagged-values>
+            <tagged-value id="tv17f97d10645b443d98971d2821af0b33" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="" />
+          </tagged-values>
+          <abstract-items>
+            <item id="138be57c3f0a42ea84ba9a70d4d29e2f" cid="REA004" type="realization" creation-date="05/21/2024 15:48:00" from="e3c4b7db8f21461bbce52cbf63339613" to="b1fffbfe23624053a2431cbb5838b78f">
+              <tagged-values>
+                <tagged-value id="tv3c3c0c22259444209bb6e8b93657ee2b" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="" />
+              </tagged-values>
+            </item>
+            <item id="1e8fe8ac62c04dc5bd69b36aa3b0e489" cid="C006" type="class" name="Program" creation-date="05/21/2024 15:48:00" visibility="undefined">
+              <tagged-values>
+                <tagged-value id="tv43d08467518144ef82a0afefb74ec1c6" name="namespace" type="text" multiple="false" hidden="false" value="" />
+                <tagged-value id="tv3a7dabc19f2c42ec837de8e0b8ebb31c" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="Program" />
+                <tagged-value id="tv5f515115985a4b29b2fa4b82e4b5ac0d" name="SourceCodeGroup" type="reference" multiple="false" hidden="true" ref="p4bcb3672e0a44d059df62b1730f92dc8_523775768" />
+                <tagged-value id="tvf83f5cf4831548baa4b86eea26309f23" name="SourceCodePath" type="text" multiple="false" hidden="true" value="D:\Документи\КПІ\Звіти\4 семестр\.Net\Програми\lab5\lab5\Program.cs" />
+                <tagged-value id="tva17f789e25c54ccd8b08553702555f4c" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="CSharp" />
+                <tagged-value id="tv75e7366643994d50b1c78974382e7d9b" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="3070" />
+                <tagged-value id="tv6cba425ba87e4a1d9c3bd3a9346478a3" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="1167" />
+                <tagged-value id="tv8bd94202b5894f9c9ce056502bab516c" name="SourceCodeFileSize" type="text" multiple="false" hidden="true" value="4240" />
+                <tagged-value id="tv31295302a1e24bcf91bd6889cba6d98a" name="SourceCodeFileChangeDate" type="text" multiple="false" hidden="true" value="05/21/2024 12:43:32" />
+              </tagged-values>
+              <operations>
+                <operation id="ob6da7dc5171643ffb96a3624b9109518566" cid="OP012" name="Main" creation-date="05/21/2024 15:48:00" type="" type-id="" visibility="undefined" static="true">
+                  <tagged-values>
+                    <tagged-value id="tv6cee6df8782346c29d68bec4a58844e1" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="Main" />
+                    <tagged-value id="tv9aaac839004e456a9535aba3780187dd" name="SourceCodePath" type="text" multiple="false" hidden="true" value="D:\Документи\КПІ\Звіти\4 семестр\.Net\Програми\lab5\lab5\Program.cs" />
+                    <tagged-value id="tv7109abee1eeb435a92bd0bc15692769f" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="CSharp" />
+                    <tagged-value id="tvc592f60ada854df8889a66f89675d292" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="3092" />
+                    <tagged-value id="tv9b753b2fce8345f8b73dae31bb73cc21" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="1142" />
+                  </tagged-values>
+                  <documentations>
+                    <doc id="cb01ad1e9e5044c5828722762f6305e7">
+                      <text>
+                        <default>
+                          <style font-name="Verdana" font-size="12">
+                            <text>
+                              <solid-brush color="#FF000000" />
+                            </text>
+                          </style>
+                        </default>
+                        <styles />
+                        <content>
+                          <paragraph>
+                            <style />
+                            <p>
+                              <t> Create processors
+</t>
+                            </p>
+                          </paragraph>
+                          <paragraph>
+                            <style />
+                            <p>
+                              <t> Process text
+</t>
+                            </p>
+                          </paragraph>
+                          <paragraph>
+                            <style />
+                            <p>
+                              <t> Handle file operations
+</t>
+                            </p>
+                          </paragraph>
+                          <paragraph>
+                            <style />
+                            <p>
+                              <t> Write processed text to file
+</t>
+                            </p>
+                          </paragraph>
+                          <paragraph>
+                            <style />
+                            <p>
+                              <t> Read text from file
+</t>
+                            </p>
+                          </paragraph>
+                        </content>
+                      </text>
+                    </doc>
+                  </documentations>
+                  <source-codes>
+                    <source-code language="CSharp">
+        string inputText = "Hello world! This is test.";
+
+                            
+        ITextProcessor baseProcessor = new GoogleTranslateProcessor("en", "uk");
+        ITextProcessor translator = new TranslateDecorator(baseProcessor);
+        ITextProcessor caseCorrector = new CorrectCaseDecorator(new CorrectCaseProcessor());
+
+                       
+        string translatedText = translator.Process(inputText);
+        string correctedText = caseCorrector.Process(translatedText);
+
+                                 
+        TextFileHandler fileHandler = new TextFileHandler();
+        string filePath = "processedText.txt";
+
+                                       
+        fileHandler.WriteToFile(filePath, correctedText);
+
+                              
+        string readText = fileHandler.ReadFromFile(filePath);
+
+        Console.WriteLine("Original Text: " + inputText);
+        Console.WriteLine("Translated Text: " + translatedText);
+        Console.WriteLine("Corrected Case Text: " + correctedText);
+        Console.WriteLine("Read Text from File: " + readText);
+    </source-code>
+                  </source-codes>
+                </operation>
+              </operations>
+            </item>
+            <item id="b72e72de2552471d8f2e7adca246b6a0" cid="PROP003" type="property" name="_innerProcessor" owner="3c52200bf04948b289a7251016731e78" creation-date="05/21/2024 15:48:00" visibility="private">
+              <tagged-values>
+                <tagged-value id="tv5c4e593ec6264d1ab849ddc34d0bb93b" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="_innerProcessor" />
+                <tagged-value id="tvc04658c014b144cb9c24dfab819253ce" name="SourceCodeGroup" type="reference" multiple="false" hidden="true" ref="p4bcb3672e0a44d059df62b1730f92dc8_523775768" />
+                <tagged-value id="tv6d46e2eaf861445aa4a0c5198a99d56c" name="SourceCodePath" type="text" multiple="false" hidden="true" value="D:\Документи\КПІ\Звіти\4 семестр\.Net\Програми\lab5\lab5\Program.cs" />
+                <tagged-value id="tvd4844f9135c84b79835a07faf46dc194" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="CSharp" />
+                <tagged-value id="tve90d9c054ad348ebadf2f1fe9e6b2374" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="2187" />
+                <tagged-value id="tvc909013e10b74bfb85ff67b886d461a9" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="48" />
+                <tagged-value id="tv3e16b33e927244afb6bc2826079f8f2f" name="SourceCodeFileSize" type="text" multiple="false" hidden="true" value="4240" />
+                <tagged-value id="tva9565c9110114e3fbfef72f8dbf8dd3a" name="SourceCodeFileChangeDate" type="text" multiple="false" hidden="true" value="05/21/2024 12:43:32" />
+              </tagged-values>
+              <structural-feature read-only="true" type="ITextProcessor" type-id="ITextProcessor" />
+            </item>
+            <item id="bc353c9212c4450095815af03685dfdd" cid="REA001" type="realization" creation-date="05/21/2024 15:48:00" from="528d3b2cc2cc452a8d14ae3b8de29882" to="b1fffbfe23624053a2431cbb5838b78f">
+              <tagged-values>
+                <tagged-value id="tv8a357be7d1204d8980c2ce0f4be9f137" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="" />
+              </tagged-values>
+            </item>
+            <item id="0fe566db1eee4d8881b55bc77a299266" cid="REA003" type="realization" creation-date="05/21/2024 15:48:00" from="3c52200bf04948b289a7251016731e78" to="b1fffbfe23624053a2431cbb5838b78f">
+              <tagged-values>
+                <tagged-value id="tv74c6b42d228643358cc0424db73c804d" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="" />
+              </tagged-values>
+            </item>
+            <item id="f80800f18f0b4e0a99dcdde7ea1ceeca" cid="PROP004" type="property" name="_innerProcessor" owner="e3c4b7db8f21461bbce52cbf63339613" creation-date="05/21/2024 15:48:00" visibility="private">
+              <tagged-values>
+                <tagged-value id="tve96bb87fd6634efb94455b6d6f8e2d73" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="_innerProcessor" />
+                <tagged-value id="tv6f3689cbd56a4e90a6c88c4589bda90f" name="SourceCodeGroup" type="reference" multiple="false" hidden="true" ref="p4bcb3672e0a44d059df62b1730f92dc8_523775768" />
+                <tagged-value id="tv6b81c49de373499a89033eb3fee3cd5e" name="SourceCodePath" type="text" multiple="false" hidden="true" value="D:\Документи\КПІ\Звіти\4 семестр\.Net\Програми\lab5\lab5\Program.cs" />
+                <tagged-value id="tv604877e2e63c46d9b8ed5ddcc8c184a1" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="CSharp" />
+                <tagged-value id="tv429ded7ad2694fb89baaf134249c249a" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="2525" />
+                <tagged-value id="tvcd03dd5a7c26432dbd4b2fddbfad8983" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="48" />
+                <tagged-value id="tva9c8a3a5905145fda6f6e263f2e7d6f6" name="SourceCodeFileSize" type="text" multiple="false" hidden="true" value="4240" />
+                <tagged-value id="tvdf0c0a5eb383459983ef5a851520f7d7" name="SourceCodeFileChangeDate" type="text" multiple="false" hidden="true" value="05/21/2024 12:43:32" />
+              </tagged-values>
+              <structural-feature read-only="true" type="ITextProcessor" type-id="ITextProcessor" />
+            </item>
+            <item id="a696845916cd489b83f500b3e69e56f6" cid="REA002" type="realization" creation-date="05/21/2024 15:48:00" from="1d3450664734400cbe25c8ccc0235124" to="b1fffbfe23624053a2431cbb5838b78f">
+              <tagged-values>
+                <tagged-value id="tvb2c2c89fb2ed445e9131052e4d0cf517" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="" />
+              </tagged-values>
+            </item>
+            <item id="528d3b2cc2cc452a8d14ae3b8de29882" cid="C001" type="class" name="GoogleTranslateProcessor" creation-date="05/21/2024 15:48:00" visibility="public">
+              <tagged-values>
+                <tagged-value id="tva406adf37a184416beff278fc8460264" name="namespace" type="text" multiple="false" hidden="false" value="" />
+                <tagged-value id="tvb94544a8eb174206a0bbdf7695bb2a76" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="GoogleTranslateProcessor" />
+                <tagged-value id="tvf59e4e4fdcfd4830a269e18ffb8d93de" name="SourceCodeGroup" type="reference" multiple="false" hidden="true" ref="p4bcb3672e0a44d059df62b1730f92dc8_523775768" />
+                <tagged-value id="tvce817a344d3c45e699a717a9525d7dfa" name="SourceCodePath" type="text" multiple="false" hidden="true" value="D:\Документи\КПІ\Звіти\4 семестр\.Net\Програми\lab5\lab5\Program.cs" />
+                <tagged-value id="tvb1eef6553adc4b23900b25843a56f0a4" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="CSharp" />
+                <tagged-value id="tv5571ba252fb64eeeac3ef8a2293c51a4" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="168" />
+                <tagged-value id="tv6fc6d74338cb4bdba34cb9888a4e5ee2" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="1152" />
+                <tagged-value id="tv0c1c528c5b9646e4a9850104f9765c7d" name="SourceCodeFileSize" type="text" multiple="false" hidden="true" value="4240" />
+                <tagged-value id="tv92bc03f5519848e0970dcfd179927d42" name="SourceCodeFileChangeDate" type="text" multiple="false" hidden="true" value="05/21/2024 12:43:32" />
+              </tagged-values>
+              <owned-items />
+              <attributes>
+                <attribute id="a4733f4d0b16846278b2e792f5accfec3561" cid="PROP001" name="fromLanguage" creation-date="05/21/2024 15:48:00" property-ref="efe6fc7cff6e4c36ab1207f0014eedef" />
+                <attribute id="aec4c2a0f299e4b89b9d0c4a8fb7c5221561" cid="PROP002" name="toLanguage" creation-date="05/21/2024 15:48:00" property-ref="112be76dc3da41dabfe0b3084d3cf0ac" />
+              </attributes>
+              <operations>
+                <operation id="o7948d0ae1cd54324a60cb32df0d9cc0d562" cid="OP002" name="GoogleTranslateProcessor" creation-date="05/21/2024 15:48:00" type="" type-id="" visibility="public">
+                  <parameters>
+                    <parameter id="p4cba9629b4a640a79def3f6e41601306" name="fromLanguage" type="string" type-id="CSharp.string" creation-date="05/21/2024 15:48:00" />
+                    <parameter id="p36f0e5776a864588b185b5d22038a349" name="toLanguage" type="string" type-id="CSharp.string" creation-date="05/21/2024 15:48:00" />
+                  </parameters>
+                  <stereotypes>
+                    <stereotype>create</stereotype>
+                  </stereotypes>
+                  <tagged-values>
+                    <tagged-value id="tv1555c530b8114891a5618a314901b0c3" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="GoogleTranslateProcessor" />
+                    <tagged-value id="tvffbdde17f8ad4fbd82cd0b2f3b6fa5cb" name="SourceCodePath" type="text" multiple="false" hidden="true" value="D:\Документи\КПІ\Звіти\4 семестр\.Net\Програми\lab5\lab5\Program.cs" />
+                    <tagged-value id="tv3ba0bd49905245bd8ea863a1e468fc6d" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="CSharp" />
+                    <tagged-value id="tv12abc317a879412c9d2dd6db239f42ac" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="299" />
+                    <tagged-value id="tvcbb2c4fb4d43435ea8a1e8a4be69d3ee" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="167" />
+                  </tagged-values>
+                </operation>
+                <operation id="oc756367d3fff477c94c3aaa7ed760b41562" cid="OP003" name="Process" creation-date="05/21/2024 15:48:00" type="string" type-id="CSharp.string" visibility="public">
+                  <parameters>
+                    <parameter id="pfb812f2fa61f4180b106a1bea6b66917" name="text" type="string" type-id="CSharp.string" creation-date="05/21/2024 15:48:00" />
+                  </parameters>
+                  <tagged-values>
+                    <tagged-value id="tv3eed3b2dc1f6414f849fbe890e6fceb3" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="Process" />
+                    <tagged-value id="tvd04ca779af41464fb815b2d24022d506" name="SourceCodePath" type="text" multiple="false" hidden="true" value="D:\Документи\КПІ\Звіти\4 семестр\.Net\Програми\lab5\lab5\Program.cs" />
+                    <tagged-value id="tv8f0aca5abe9a4b49a4aef781f84a0357" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="CSharp" />
+                    <tagged-value id="tvd5f4c1cd5c1345bca2dd20fa0ae3dac5" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="474" />
+                    <tagged-value id="tv4f0c8e9add7448a1b54a1578685909cb" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="247" />
+                  </tagged-values>
+                  <source-codes>
+                    <source-code language="CSharp">
+        string[] words = text.Split(' ');
+        for (int i = 0; i &lt; words.Length; i++)
+        {
+            words[i] = Translate(words[i]);
+        }
+        return string.Join(" ", words);
+    </source-code>
+                  </source-codes>
+                </operation>
+                <operation id="oe7344c3322f747c8888f0c5c6cb94810563" cid="OP004" name="Translate" creation-date="05/21/2024 15:48:00" type="string" type-id="CSharp.string" visibility="private">
+                  <parameters>
+                    <parameter id="pa0616f6cfe734d77abe415e9cd6701a3" name="word" type="string" type-id="CSharp.string" creation-date="05/21/2024 15:48:00" />
+                  </parameters>
+                  <tagged-values>
+                    <tagged-value id="tvefb16976da8c4f289d84959999916294" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="Translate" />
+                    <tagged-value id="tv49c32aafdd294e19985e9febcad12489" name="SourceCodePath" type="text" multiple="false" hidden="true" value="D:\Документи\КПІ\Звіти\4 семестр\.Net\Програми\lab5\lab5\Program.cs" />
+                    <tagged-value id="tvf5feefa8c99f4ead9691eaf72674d1e8" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="CSharp" />
+                    <tagged-value id="tv70525648941a4677925fe015dbea6cdc" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="729" />
+                    <tagged-value id="tv8265fc57540a4e3cb596198f5ad3bbc1" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="588" />
+                  </tagged-values>
+                  <source-codes>
+                    <source-code language="CSharp">
+        var url = $"https://translate.googleapis.com/translate_a/single?client=gtx&amp;sl={fromLanguage}&amp;tl={toLanguage}&amp;dt=t&amp;q={HttpUtility.UrlEncode(word)}";
+        var webClient = new WebClient
+        {
+            Encoding = Encoding.UTF8
+        };
+        var result = webClient.DownloadString(url);
+        try
+        {
+            result = result.Substring(4, result.IndexOf("\"", 4, StringComparison.Ordinal) - 4);
+            return result;
+        }
+        catch
+        {
+            return "Error";
+        }
+    </source-code>
+                  </source-codes>
+                </operation>
+              </operations>
+            </item>
+            <item id="bf64c1281dee454da42bb7fcec65ad69" cid="C005" type="class" name="TextFileHandler" creation-date="05/21/2024 15:48:00" visibility="public">
+              <tagged-values>
+                <tagged-value id="tv5b28e625cb9e4f829a538716dea75af8" name="namespace" type="text" multiple="false" hidden="false" value="" />
+                <tagged-value id="tv19af1a61bd414bc09791ea76f5511c7f" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="TextFileHandler" />
+                <tagged-value id="tvf1eaee745f3b448b838338cd01bc6cf4" name="SourceCodeGroup" type="reference" multiple="false" hidden="true" ref="p4bcb3672e0a44d059df62b1730f92dc8_523775768" />
+                <tagged-value id="tv7685691dba81468d9a7cc8b9817b7fbc" name="SourceCodePath" type="text" multiple="false" hidden="true" value="D:\Документи\КПІ\Звіти\4 семестр\.Net\Програми\lab5\lab5\Program.cs" />
+                <tagged-value id="tvc713a2a914d242f4a90aa5485e889e9d" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="CSharp" />
+                <tagged-value id="tv0880483b9b8140598a6b8f9c55409d93" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="2806" />
+                <tagged-value id="tv7f86f62ab159443b92f706ee10b29bdb" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="260" />
+                <tagged-value id="tvb6b54fd9ceba44bdb96603ba921f513b" name="SourceCodeFileSize" type="text" multiple="false" hidden="true" value="4240" />
+                <tagged-value id="tvf1e21928071a4a4caf024a5e3d857aab" name="SourceCodeFileChangeDate" type="text" multiple="false" hidden="true" value="05/21/2024 12:43:32" />
+              </tagged-values>
+              <operations>
+                <operation id="o8043dbfaf0e14d1ab015b4cf51a933a8565" cid="OP010" name="WriteToFile" creation-date="05/21/2024 15:48:00" type="" type-id="" visibility="public">
+                  <parameters>
+                    <parameter id="pc0447250a59444beaf310785b8d6c9df" name="filePath" type="string" type-id="CSharp.string" creation-date="05/21/2024 15:48:00" />
+                    <parameter id="p065e4d42c21f4ff0bf04c160e56ee41a" name="text" type="string" type-id="CSharp.string" creation-date="05/21/2024 15:48:00" />
+                  </parameters>
+                  <tagged-values>
+                    <tagged-value id="tv244603fb919b49d6a5beb4dae82bf1c2" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="WriteToFile" />
+                    <tagged-value id="tv6a5be461010b4ba3ad16cf6c7be54251" name="SourceCodePath" type="text" multiple="false" hidden="true" value="D:\Документи\КПІ\Звіти\4 семестр\.Net\Програми\lab5\lab5\Program.cs" />
+                    <tagged-value id="tv5c710ecbc0864b7ea38e6262407c8669" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="CSharp" />
+                    <tagged-value id="tv7b55ec8e35a44b4f9506ac55c95a3eca" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="2843" />
+                    <tagged-value id="tv47f44cf013ed488384813afdc1d1a0a3" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="111" />
+                  </tagged-values>
+                  <source-codes>
+                    <source-code language="CSharp">
+        File.WriteAllText(filePath, text);
+    </source-code>
+                  </source-codes>
+                </operation>
+                <operation id="o958a10473c92400f862e358511dc7f81565" cid="OP011" name="ReadFromFile" creation-date="05/21/2024 15:48:00" type="string" type-id="CSharp.string" visibility="public">
+                  <parameters>
+                    <parameter id="p91c753c1b77c4679b886921580c9c8e8" name="filePath" type="string" type-id="CSharp.string" creation-date="05/21/2024 15:48:00" />
+                  </parameters>
+                  <tagged-values>
+                    <tagged-value id="tvf03abc58342b4782a422d0be3d0a0dbc" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="ReadFromFile" />
+                    <tagged-value id="tv2c48b0a30fb543ebb60f7be69c1b6510" name="SourceCodePath" type="text" multiple="false" hidden="true" value="D:\Документи\КПІ\Звіти\4 семестр\.Net\Програми\lab5\lab5\Program.cs" />
+                    <tagged-value id="tv71602944fc8644fa861ce0f91f99cacf" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="CSharp" />
+                    <tagged-value id="tvd82285c9fef64fa4a6e4534dca61046c" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="2962" />
+                    <tagged-value id="tv5661db05f5944411abbacf9e183d0d18" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="101" />
+                  </tagged-values>
+                  <source-codes>
+                    <source-code language="CSharp">
+        return File.ReadAllText(filePath);
+    </source-code>
+                  </source-codes>
+                </operation>
+              </operations>
+            </item>
+            <item id="112be76dc3da41dabfe0b3084d3cf0ac" cid="PROP002" type="property" name="toLanguage" owner="528d3b2cc2cc452a8d14ae3b8de29882" creation-date="05/21/2024 15:48:00" visibility="private">
+              <tagged-values>
+                <tagged-value id="tvbab3baceeb694e9abed36d357bda50b6" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="toLanguage" />
+                <tagged-value id="tv6a456d587f1d4a1ea06e92173cabc952" name="SourceCodeGroup" type="reference" multiple="false" hidden="true" ref="p4bcb3672e0a44d059df62b1730f92dc8_523775768" />
+                <tagged-value id="tva29868cdf74e4aab99af82ec1db735f7" name="SourceCodePath" type="text" multiple="false" hidden="true" value="D:\Документи\КПІ\Звіти\4 семестр\.Net\Програми\lab5\lab5\Program.cs" />
+                <tagged-value id="tv72fc4b307fe54c31980f0039f46917d0" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="CSharp" />
+                <tagged-value id="tv3bf67012c8eb4cd68f8c58a7879e8bb4" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="265" />
+                <tagged-value id="tv68d3990b81dc4e879054b70e04aa0fe9" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="26" />
+                <tagged-value id="tv5b89522d54f64dfcbe47d85e48281d45" name="SourceCodeFileSize" type="text" multiple="false" hidden="true" value="4240" />
+                <tagged-value id="tv08e787605412488fb29d19e4cf530b5a" name="SourceCodeFileChangeDate" type="text" multiple="false" hidden="true" value="05/21/2024 12:43:32" />
+              </tagged-values>
+              <structural-feature type="string" type-id="CSharp.string" />
+            </item>
+            <item id="e3c4b7db8f21461bbce52cbf63339613" cid="C004" type="class" name="CorrectCaseDecorator" creation-date="05/21/2024 15:48:00" visibility="public">
+              <tagged-values>
+                <tagged-value id="tv86be24d9d0b94a42a6f52445fc725ac7" name="namespace" type="text" multiple="false" hidden="false" value="" />
+                <tagged-value id="tvfa82f6911a2e4a27be4770758f87c905" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="CorrectCaseDecorator" />
+                <tagged-value id="tva835a287f9934c96bcafa43d4970fe85" name="SourceCodeGroup" type="reference" multiple="false" hidden="true" ref="p4bcb3672e0a44d059df62b1730f92dc8_523775768" />
+                <tagged-value id="tv02e05a8a23f44feb8d7b54b64f67a9f5" name="SourceCodePath" type="text" multiple="false" hidden="true" value="D:\Документи\КПІ\Звіти\4 семестр\.Net\Програми\lab5\lab5\Program.cs" />
+                <tagged-value id="tvc84b9860892c41938edc32e26493c461" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="CSharp" />
+                <tagged-value id="tvb8f83611139247eb9fce1153deef8a33" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="2466" />
+                <tagged-value id="tv2656768896f842debbcbfed2beaee9ca" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="336" />
+                <tagged-value id="tvfcd4e077113d459aaa5c656f264d86d3" name="SourceCodeFileSize" type="text" multiple="false" hidden="true" value="4240" />
+                <tagged-value id="tv049b5e840fb54eaaacad2af69ec7ad45" name="SourceCodeFileChangeDate" type="text" multiple="false" hidden="true" value="05/21/2024 12:43:32" />
+              </tagged-values>
+              <owned-items />
+              <attributes>
+                <attribute id="adb1f19269d614c559314ab6ddaa49113564" cid="PROP004" name="_innerProcessor" creation-date="05/21/2024 15:48:00" property-ref="f80800f18f0b4e0a99dcdde7ea1ceeca" />
+              </attributes>
+              <operations>
+                <operation id="od0d3dc5f0d8f4075be326bb1ea4a33af565" cid="OP008" name="CorrectCaseDecorator" creation-date="05/21/2024 15:48:00" type="" type-id="" visibility="public">
+                  <parameters>
+                    <parameter id="pdc6e17805dbe4e759f24a459d69443a3" name="innerProcessor" type="ITextProcessor" type-id="ITextProcessor" creation-date="05/21/2024 15:48:00" />
+                  </parameters>
+                  <stereotypes>
+                    <stereotype>create</stereotype>
+                  </stereotypes>
+                  <tagged-values>
+                    <tagged-value id="tvbe94f09be4c84be9a6d610e889146322" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="CorrectCaseDecorator" />
+                    <tagged-value id="tv8915dd65f71e4385b36e875beab03e69" name="SourceCodePath" type="text" multiple="false" hidden="true" value="D:\Документи\КПІ\Звіти\4 семестр\.Net\Програми\lab5\lab5\Program.cs" />
+                    <tagged-value id="tv658a3b41aaa84548ac74f173658da3a1" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="CSharp" />
+                    <tagged-value id="tv15d8e843b404464581a146bd9326ec29" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="2581" />
+                    <tagged-value id="tvb69bdd6adca640cea292f591b59b389e" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="115" />
+                  </tagged-values>
+                </operation>
+                <operation id="o880464e02b5b4772977156b05f6d7e35565" cid="OP009" name="Process" creation-date="05/21/2024 15:48:00" type="string" type-id="CSharp.string" visibility="public">
+                  <parameters>
+                    <parameter id="p1baad018e9f84d31b6da72abc669753a" name="text" type="string" type-id="CSharp.string" creation-date="05/21/2024 15:48:00" />
+                  </parameters>
+                  <tagged-values>
+                    <tagged-value id="tv539c4509b7e049c7850fbadd75e90709" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="Process" />
+                    <tagged-value id="tv6e1f701b5d6447b5bc8e9c131654b51f" name="SourceCodePath" type="text" multiple="false" hidden="true" value="D:\Документи\КПІ\Звіти\4 семестр\.Net\Програми\lab5\lab5\Program.cs" />
+                    <tagged-value id="tvcfda6fab535a4a1fb1a40ff6b4660456" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="CSharp" />
+                    <tagged-value id="tvb6dac7fbf625494bb341b495f3be2fd5" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="2704" />
+                    <tagged-value id="tv0124cfaf8fd244d18aa42c90d828a0b7" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="95" />
+                  </tagged-values>
+                  <source-codes>
+                    <source-code language="CSharp">
+        return _innerProcessor.Process(text);
+    </source-code>
+                  </source-codes>
+                </operation>
+              </operations>
+            </item>
+            <item id="3c52200bf04948b289a7251016731e78" cid="C003" type="class" name="TranslateDecorator" creation-date="05/21/2024 15:48:00" visibility="public">
+              <tagged-values>
+                <tagged-value id="tv70abec9a58894e759543a7e5c3c3e291" name="namespace" type="text" multiple="false" hidden="false" value="" />
+                <tagged-value id="tv17cc9cce47c644c5a5bb557c13996618" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="TranslateDecorator" />
+                <tagged-value id="tv26bbabe201434e4ca11af1d4d6fa82c2" name="SourceCodeGroup" type="reference" multiple="false" hidden="true" ref="p4bcb3672e0a44d059df62b1730f92dc8_523775768" />
+                <tagged-value id="tve2e8dfa4c7e249369f577fa7feacc539" name="SourceCodePath" type="text" multiple="false" hidden="true" value="D:\Документи\КПІ\Звіти\4 семестр\.Net\Програми\lab5\lab5\Program.cs" />
+                <tagged-value id="tv48dc96e5b77041c49e8ca93edd64ecfb" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="CSharp" />
+                <tagged-value id="tv4833ca03fa4e437a8779dc4af213b366" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="2130" />
+                <tagged-value id="tv2a30713ec58e4845894786247fac3c27" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="332" />
+                <tagged-value id="tvf56238a0ede148db82d9531bb0855e8e" name="SourceCodeFileSize" type="text" multiple="false" hidden="true" value="4240" />
+                <tagged-value id="tv6f684fd7582a4d4c9eab22bf51cd7b32" name="SourceCodeFileChangeDate" type="text" multiple="false" hidden="true" value="05/21/2024 12:43:32" />
+              </tagged-values>
+              <owned-items />
+              <attributes>
+                <attribute id="a00cb0ba8750e4f608ebabbf91d022935564" cid="PROP003" name="_innerProcessor" creation-date="05/21/2024 15:48:00" property-ref="b72e72de2552471d8f2e7adca246b6a0" />
+              </attributes>
+              <operations>
+                <operation id="o29657c80cc254086927dcd51a733e19c564" cid="OP006" name="TranslateDecorator" creation-date="05/21/2024 15:48:00" type="" type-id="" visibility="public">
+                  <parameters>
+                    <parameter id="pfb7c5c9ebb944617b1398af8a2e0f38c" name="innerProcessor" type="ITextProcessor" type-id="ITextProcessor" creation-date="05/21/2024 15:48:00" />
+                  </parameters>
+                  <stereotypes>
+                    <stereotype>create</stereotype>
+                  </stereotypes>
+                  <tagged-values>
+                    <tagged-value id="tvda3b4d4c05424603b01b5e51b1cac0e9" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="TranslateDecorator" />
+                    <tagged-value id="tv91bf45c280984f09b941a8ba338b7220" name="SourceCodePath" type="text" multiple="false" hidden="true" value="D:\Документи\КПІ\Звіти\4 семестр\.Net\Програми\lab5\lab5\Program.cs" />
+                    <tagged-value id="tv5e004f21cb1e463db11b2a6ad961de3c" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="CSharp" />
+                    <tagged-value id="tvc1a586d8816044eba616e1c8acb9b3fc" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="2243" />
+                    <tagged-value id="tv38d7d41bda4942be9ca9f0c2f7e2135c" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="113" />
+                  </tagged-values>
+                </operation>
+                <operation id="o6dd2e0f6053d407585bb5c2a69299331564" cid="OP007" name="Process" creation-date="05/21/2024 15:48:00" type="string" type-id="CSharp.string" visibility="public">
+                  <parameters>
+                    <parameter id="p8a38e8f17a254fa89754efa9daef84d9" name="text" type="string" type-id="CSharp.string" creation-date="05/21/2024 15:48:00" />
+                  </parameters>
+                  <tagged-values>
+                    <tagged-value id="tvdd1a6f38006d43299498acd695d0a020" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="Process" />
+                    <tagged-value id="tve37e787ba67d4055b3729ef3e2e9b9ba" name="SourceCodePath" type="text" multiple="false" hidden="true" value="D:\Документи\КПІ\Звіти\4 семестр\.Net\Програми\lab5\lab5\Program.cs" />
+                    <tagged-value id="tveb1b4debfe8742e9a8da099b0e6c4d6a" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="CSharp" />
+                    <tagged-value id="tv4f65cdb9b5a843ec9ef2ad6e26f89dbe" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="2364" />
+                    <tagged-value id="tvab8fd267d2864329a5caa7ea345328c8" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="95" />
+                  </tagged-values>
+                  <source-codes>
+                    <source-code language="CSharp">
+        return _innerProcessor.Process(text);
+    </source-code>
+                  </source-codes>
+                </operation>
+              </operations>
+            </item>
+            <item id="b1fffbfe23624053a2431cbb5838b78f" cid="I001" type="uml-interface-classifier" name="ITextProcessor" creation-date="05/21/2024 15:48:00" visibility="public">
+              <stereotypes>
+                <stereotype name="interface" />
+              </stereotypes>
+              <tagged-values>
+                <tagged-value id="tv8c495ff94c1747f795eb79e5c05d48b1" name="namespace" type="text" multiple="false" hidden="false" value="" />
+                <tagged-value id="tv219385231d344e0da04cfa88be051869" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="ITextProcessor" />
+                <tagged-value id="tv5717c1beec7f418cbc82cdb521736bcf" name="SourceCodeGroup" type="reference" multiple="false" hidden="true" ref="p4bcb3672e0a44d059df62b1730f92dc8_523775768" />
+                <tagged-value id="tv01e04c67468549beb9fb68f7f730c5fe" name="SourceCodePath" type="text" multiple="false" hidden="true" value="D:\Документи\КПІ\Звіти\4 семестр\.Net\Програми\lab5\lab5\Program.cs" />
+                <tagged-value id="tvf627ff6220d4437cb655c8b7200ddc15" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="CSharp" />
+                <tagged-value id="tvd3a8b29831534362a0aab8a218c86f1d" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="93" />
+                <tagged-value id="tv3c5e26b0fbc3484aaac029c25eaf17f9" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="71" />
+                <tagged-value id="tvb8305e2160674ecdbe719959712b8f60" name="SourceCodeFileSize" type="text" multiple="false" hidden="true" value="4240" />
+                <tagged-value id="tv72937b9a79704f85a1d499e29eae2619" name="SourceCodeFileChangeDate" type="text" multiple="false" hidden="true" value="05/21/2024 12:43:32" />
+              </tagged-values>
+              <stereotype-instances>
+                <stereotype id="b1fffbfe23624053a2431cbb5838b78f_interface_c" type="interface" creation-date="05/21/2024 15:48:00" ref="" />
+              </stereotype-instances>
+              <operations>
+                <operation id="o756a973b34a443af9d7a2923086c3b33556" cid="OP001" name="Process" creation-date="05/21/2024 15:48:00" type="string" type-id="CSharp.string" visibility="undefined">
+                  <parameters>
+                    <parameter id="p7bc45157546e420ea7f7a7b66c263dff" name="text" type="string" type-id="CSharp.string" creation-date="05/21/2024 15:48:00" />
+                  </parameters>
+                  <tagged-values>
+                    <tagged-value id="tv46086f8c19d24485a8e5077e9bba73fb" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="Process" />
+                    <tagged-value id="tve5e5da3e562b4bdc9cfe5077ba7789c0" name="SourceCodePath" type="text" multiple="false" hidden="true" value="D:\Документи\КПІ\Звіти\4 семестр\.Net\Програми\lab5\lab5\Program.cs" />
+                    <tagged-value id="tv0f33fb63ace44d14a31ea21c246c1e54" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="CSharp" />
+                    <tagged-value id="tvf7fb7e3ff81940fa8b5368191a096fa1" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="133" />
+                    <tagged-value id="tv143a0ec3ed8242fb833b6b6d3d3cbb9a" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="28" />
+                  </tagged-values>
+                </operation>
+              </operations>
+            </item>
+            <item id="efe6fc7cff6e4c36ab1207f0014eedef" cid="PROP001" type="property" name="fromLanguage" owner="528d3b2cc2cc452a8d14ae3b8de29882" creation-date="05/21/2024 15:48:00" visibility="private">
+              <tagged-values>
+                <tagged-value id="tvec9b9b39b3aa4f34a5316e292fcfebe5" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="fromLanguage" />
+                <tagged-value id="tvce522e53be994c7f8761a41baae62370" name="SourceCodeGroup" type="reference" multiple="false" hidden="true" ref="p4bcb3672e0a44d059df62b1730f92dc8_523775768" />
+                <tagged-value id="tv306061128aeb42729932775e785f6423" name="SourceCodePath" type="text" multiple="false" hidden="true" value="D:\Документи\КПІ\Звіти\4 семестр\.Net\Програми\lab5\lab5\Program.cs" />
+                <tagged-value id="tvbded9b5f652646e4853aab69c72e9dad" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="CSharp" />
+                <tagged-value id="tv30226474e62941829d6d40e726741095" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="231" />
+                <tagged-value id="tv1c50988349f246e0bd9069d71da362fc" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="28" />
+                <tagged-value id="tv46cb9fefcc56451db17c8f0437b6c79c" name="SourceCodeFileSize" type="text" multiple="false" hidden="true" value="4240" />
+                <tagged-value id="tv52a36734e52949758b6e08b9513746d0" name="SourceCodeFileChangeDate" type="text" multiple="false" hidden="true" value="05/21/2024 12:43:32" />
+              </tagged-values>
+              <structural-feature type="string" type-id="CSharp.string" />
+            </item>
+            <item id="1d3450664734400cbe25c8ccc0235124" cid="C002" type="class" name="CorrectCaseProcessor" creation-date="05/21/2024 15:48:00" visibility="public">
+              <tagged-values>
+                <tagged-value id="tvbeb46642e670464592ac60f700b433f9" name="namespace" type="text" multiple="false" hidden="false" value="" />
+                <tagged-value id="tv86777a493e2e4816b5a2f08e6c02b440" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="CorrectCaseProcessor" />
+                <tagged-value id="tvc3164a542b5547e297726701d8dec329" name="SourceCodeGroup" type="reference" multiple="false" hidden="true" ref="p4bcb3672e0a44d059df62b1730f92dc8_523775768" />
+                <tagged-value id="tvbcfcae1f56e245dfa0115dbf675dba75" name="SourceCodePath" type="text" multiple="false" hidden="true" value="D:\Документи\КПІ\Звіти\4 семестр\.Net\Програми\lab5\lab5\Program.cs" />
+                <tagged-value id="tv1b04c334faf44bff8129cfbb45f8777e" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="CSharp" />
+                <tagged-value id="tvf66c6a09519a4a5780820848305651d0" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="1324" />
+                <tagged-value id="tv12e92ff3a7a844cba6aaaaf4d40ace33" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="802" />
+                <tagged-value id="tv7fb12a04fd1e40248dec313be1206b79" name="SourceCodeFileSize" type="text" multiple="false" hidden="true" value="4240" />
+                <tagged-value id="tv36eb976503af405b856a4f68789a4fad" name="SourceCodeFileChangeDate" type="text" multiple="false" hidden="true" value="05/21/2024 12:43:32" />
+              </tagged-values>
+              <operations>
+                <operation id="ob602be80a66446f8a2d28085dc5208b3563" cid="OP005" name="Process" creation-date="05/21/2024 15:48:00" type="string" type-id="CSharp.string" visibility="public">
+                  <parameters>
+                    <parameter id="p992f4e75177a4d0fbe9ebab94faa06fb" name="text" type="string" type-id="CSharp.string" creation-date="05/21/2024 15:48:00" />
+                  </parameters>
+                  <tagged-values>
+                    <tagged-value id="tv40657a69faa143db966e6741207c9b3b" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="Process" />
+                    <tagged-value id="tv4b0e53dc6b1446d4bb2f89018f4480fe" name="SourceCodePath" type="text" multiple="false" hidden="true" value="D:\Документи\КПІ\Звіти\4 семестр\.Net\Програми\lab5\lab5\Program.cs" />
+                    <tagged-value id="tvbf6bab2244154b948a2dee4f6a95153a" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="CSharp" />
+                    <tagged-value id="tv730109ac9f3c405b98565f406efa4f88" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="1383" />
+                    <tagged-value id="tv4ec430a2c63b4337a2e59a963728f25f" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="740" />
+                  </tagged-values>
+                  <source-codes>
+                    <source-code language="CSharp">
+        if (string.IsNullOrEmpty(text))
+            return text;
+
+        string[] sentences = text.Split(new char[] { '.', '!', '?' }, StringSplitOptions.RemoveEmptyEntries);
+
+        for (int i = 0; i &lt; sentences.Length; i++)
+        {
+            string sentence = sentences[i].Trim();
+
+            if (!string.IsNullOrEmpty(sentence))
+            {
+                char firstChar = char.ToUpper(sentence[0]);
+
+                string restOfSentence = sentence.Substring(1).ToLower();
+
+                sentences[i] = firstChar + restOfSentence;
+            }
+        }
+
+        string correctedText = string.Join(". ", sentences) + ".";
+
+        return correctedText;
+    </source-code>
+                  </source-codes>
+                </operation>
+              </operations>
+            </item>
+          </abstract-items>
+          <sub-models />
+          <diagram type="uml-class" id="p7153e191624d4c93b4324ac7fe6ef4e1_322970383" name="" order-index="1" uid="" name-style="" auto-routed-paths="false" default-line-style="default" namespace="" view-location="-23,-77" zoom="0.8">
+            <style>
+              <background-color index="1" color="#FFFFFFFF" />
+              <background-color index="2" color="#FFFFFFFF" />
+              <background-type type="vertical-linear" />
+            </style>
+            <meta>
+              <authors>
+                <author> </author>
+              </authors>
+              <description />
+              <creation-date>05/21/2024 15:48:00</creation-date>
+              <change-date>05/21/2024 15:48:00</change-date>
+              <revision-count>0</revision-count>
+              <version />
+            </meta>
+            <tagged-values>
+              <tagged-value id="tva6f240fadd814ad0b32bc5533b3ef6a2" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="" />
+            </tagged-values>
+            <abstract-items />
+            <layer id="8ffaefabc1cc4ced802bbe7ac6b4231e" name="Default" visible="true" enabled="true" locked="false">
+              <item id="0fe566db1eee4d8881b55bc77a299266" iid="c361e4ee328749bc9fe7486b599b7a87" creation-date="05/21/2024 15:48:00" order-index="0" type="relation">
+                <layout line-style="perpendicular" lock-to-fields="false" auto-path="" x1="168" y1="187" x2="618" y2="78" start-border-pos="0.125" end-border-pos="0.625" name-position="0,20">
+                  <points>
+                    <point x="168" y="187" />
+                    <point x="618" y="78" />
+                  </points>
+                </layout>
+                <relation from="3c52200bf04948b289a7251016731e78" from-iid="4177411c09c3402ca7eeccda168ff357" to="b1fffbfe23624053a2431cbb5838b78f" to-iid="d5f0a3d173a84abcb329e32346d68582" />
+              </item>
+              <item id="b1fffbfe23624053a2431cbb5838b78f" iid="d5f0a3d173a84abcb329e32346d68582" creation-date="05/21/2024 15:48:00" order-index="1" type="entity">
+                <layout ax="532" ay="0" awidth="173" aheight="78" x="532" y="0" width="173" height="78" />
+                <classifier />
+                <class />
+              </item>
+              <item id="1d3450664734400cbe25c8ccc0235124" iid="df74cc0c155b48dc8994f6ef0472b124" creation-date="05/21/2024 15:48:00" order-index="2" type="entity">
+                <layout ax="744" ay="187" awidth="186" aheight="60" x="744" y="187" width="186" height="60" />
+                <classifier />
+                <class />
+              </item>
+              <item id="bf64c1281dee454da42bb7fcec65ad69" iid="fe21c9e440ee4b6183094b25b80211e4" creation-date="05/21/2024 15:48:00" order-index="3" type="entity">
+                <layout ax="0" ay="371" awidth="261" aheight="79" x="0" y="371" width="261" height="79" />
+                <classifier />
+                <class />
+              </item>
+              <item id="138be57c3f0a42ea84ba9a70d4d29e2f" iid="2f270ce178cf4232b7a5aee36b77f6a7" creation-date="05/21/2024 15:48:00" order-index="4" type="relation">
+                <layout line-style="perpendicular" lock-to-fields="false" auto-path="" x1="618" y1="187" x2="618" y2="78" start-border-pos="0.18492646515369415" end-border-pos="0.625" name-position="0,20">
+                  <points>
+                    <point x="618" y="187" />
+                    <point x="618" y="78" />
+                  </points>
+                </layout>
+                <relation from="e3c4b7db8f21461bbce52cbf63339613" from-iid="233495751b08402db07dc2f6180bcf28" to="b1fffbfe23624053a2431cbb5838b78f" to-iid="d5f0a3d173a84abcb329e32346d68582" />
+              </item>
+              <item id="e3c4b7db8f21461bbce52cbf63339613" iid="233495751b08402db07dc2f6180bcf28" creation-date="05/21/2024 15:48:00" order-index="5" type="entity">
+                <layout ax="367" ay="187" awidth="340" aheight="116" x="367" y="187" width="340" height="116" />
+                <classifier />
+                <class />
+              </item>
+              <item id="bc353c9212c4450095815af03685dfdd" iid="8125cdba894e4c7c85a360d357f7d184" creation-date="05/21/2024 15:48:00" order-index="6" type="relation">
+                <layout line-style="perpendicular" lock-to-fields="false" auto-path="" x1="1134" y1="187" x2="618" y2="78" start-border-pos="0.125" end-border-pos="0.625" name-position="0,20">
+                  <points>
+                    <point x="1134" y="187" />
+                    <point x="618" y="78" />
+                  </points>
+                </layout>
+                <relation from="528d3b2cc2cc452a8d14ae3b8de29882" from-iid="2e9c930b845e47a2b0cf246d256f8a9b" to="b1fffbfe23624053a2431cbb5838b78f" to-iid="d5f0a3d173a84abcb329e32346d68582" />
+              </item>
+              <item id="3c52200bf04948b289a7251016731e78" iid="4177411c09c3402ca7eeccda168ff357" creation-date="05/21/2024 15:48:00" order-index="7" type="entity">
+                <layout ax="8" ay="187" awidth="321" aheight="116" x="8" y="187" width="321" height="116" />
+                <classifier />
+                <class />
+              </item>
+              <item id="528d3b2cc2cc452a8d14ae3b8de29882" iid="2e9c930b845e47a2b0cf246d256f8a9b" creation-date="05/21/2024 15:48:00" order-index="8" type="entity">
+                <layout ax="968" ay="187" awidth="333" aheight="154" x="968" y="187" width="333" height="154" />
+                <classifier />
+                <class />
+              </item>
+              <item id="a696845916cd489b83f500b3e69e56f6" iid="8c2e946920ae49caac3ef97e713b3e35" creation-date="05/21/2024 15:48:00" order-index="9" type="relation">
+                <layout line-style="perpendicular" lock-to-fields="false" auto-path="" x1="837" y1="187" x2="618" y2="78" start-border-pos="0.125" end-border-pos="0.625" name-position="0,20">
+                  <points>
+                    <point x="837" y="187" />
+                    <point x="618" y="78" />
+                  </points>
+                </layout>
+                <relation from="1d3450664734400cbe25c8ccc0235124" from-iid="df74cc0c155b48dc8994f6ef0472b124" to="b1fffbfe23624053a2431cbb5838b78f" to-iid="d5f0a3d173a84abcb329e32346d68582" />
+              </item>
+              <item id="1e8fe8ac62c04dc5bd69b36aa3b0e489" iid="e36e314777a44561b7f3f45671e75874" creation-date="05/21/2024 15:48:00" order-index="10" type="entity">
+                <layout ax="301" ay="371" awidth="79" aheight="60" x="301" y="371" width="79" height="60" />
+                <classifier />
+                <class />
+              </item>
+            </layer>
+          </diagram>
+        </model>
+      </sub-models>
+      <diagram type="uml-package" id="pff8a5c82928143f190a6f2f32c42d8ef_171052276" name="Packages" order-index="1" uid="" name-style="" auto-routed-paths="false" default-line-style="default" namespace="">
+        <style>
+          <background-color index="1" color="#FFFFFFFF" />
+          <background-color index="2" color="#FFFFFFFF" />
+          <background-type type="vertical-linear" />
+        </style>
+        <meta>
+          <authors>
+            <author> </author>
+          </authors>
+          <description />
+          <creation-date>05/21/2024 15:48:00</creation-date>
+          <change-date>05/21/2024 15:48:00</change-date>
+          <revision-count>0</revision-count>
+          <version />
+        </meta>
+        <tagged-values>
+          <tagged-value id="tv640351babaad4ca7ba7a49cb43307ba3" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="" />
+        </tagged-values>
+        <abstract-items />
+        <layer id="eda99ae9e5a64cb68a147f7d58581d85" name="Default" visible="true" enabled="true" locked="false">
+          <item id="b8ebf63e9e954d488a9309a6b7c467a4" iid="7e276f3253724341af270f0782d6ca59" creation-date="05/21/2024 15:48:00" order-index="0" type="entity">
+            <layout ax="0" ay="0" awidth="84" aheight="56" x="0" y="0" width="84" height="56" expanded="-20,0,84,56" collapsed="0,0,0,0" />
+            <package name-in-body="false" />
+          </item>
+        </layer>
+      </diagram>
+    </model>
+  </models>
+</sim-project>

@@ -1,0 +1,179 @@
+{
+  "Students": [
+    {
+      "Group": "IK-02",
+      "AverageGrade": 61.859999999999999,
+      "ThesisId": 6,
+      "SupervisorId": 3,
+      "Supervisor": {
+        "Position": "Professor",
+        "Id": 3,
+        "LastName": "Last1",
+        "FirstName": "First1",
+        "MiddleName": "Middle1",
+        "BirthDate": "1959-03-14T00:00:00"
+      },
+      "Id": 7,
+      "LastName": "Last1",
+      "FirstName": "First1",
+      "MiddleName": "Middle1",
+      "BirthDate": "1999-07-14T00:00:00"
+    },
+    {
+      "Group": "IPI-73",
+      "AverageGrade": 69.420000000000002,
+      "ThesisId": 6,
+      "SupervisorId": 3,
+      "Supervisor": {
+        "Position": "Professor",
+        "Id": 3,
+        "LastName": "Last1",
+        "FirstName": "First1",
+        "MiddleName": "Middle1",
+        "BirthDate": "1959-03-14T00:00:00"
+      },
+      "Id": 8,
+      "LastName": "Last2",
+      "FirstName": "First2",
+      "MiddleName": "Middle2",
+      "BirthDate": "2007-11-16T00:00:00"
+    }
+  ],
+  "Supervisors": [
+    {
+      "Position": "Professor",
+      "Id": 3,
+      "LastName": "Last1",
+      "FirstName": "First1",
+      "MiddleName": "Middle1",
+      "BirthDate": "1959-03-14T00:00:00"
+    },
+    {
+      "Position": "Assistant",
+      "Id": 4,
+      "LastName": "Last2",
+      "FirstName": "First2",
+      "MiddleName": "Middle2",
+      "BirthDate": "1953-06-12T00:00:00"
+    }
+  ],
+  "Theses": [
+    {
+      "Id": 5,
+      "Title": "Thesis 1",
+      "PagesCount": 212,
+      "Grade": 91,
+      "IsPublished": true,
+      "Students": []
+    },
+    {
+      "Id": 6,
+      "Title": "Thesis 2",
+      "PagesCount": 131,
+      "Grade": 95,
+      "IsPublished": true,
+      "Students": [
+        {
+          "Group": "IK-02",
+          "AverageGrade": 61.859999999999999,
+          "ThesisId": 6,
+          "SupervisorId": 3,
+          "Supervisor": {
+            "Position": "Professor",
+            "Id": 3,
+            "LastName": "Last1",
+            "FirstName": "First1",
+            "MiddleName": "Middle1",
+            "BirthDate": "1959-03-14T00:00:00"
+          },
+          "Id": 7,
+          "LastName": "Last1",
+          "FirstName": "First1",
+          "MiddleName": "Middle1",
+          "BirthDate": "1999-07-14T00:00:00"
+        },
+        {
+          "Group": "IPI-73",
+          "AverageGrade": 69.420000000000002,
+          "ThesisId": 6,
+          "SupervisorId": 3,
+          "Supervisor": {
+            "Position": "Professor",
+            "Id": 3,
+            "LastName": "Last1",
+            "FirstName": "First1",
+            "MiddleName": "Middle1",
+            "BirthDate": "1959-03-14T00:00:00"
+          },
+          "Id": 8,
+          "LastName": "Last2",
+          "FirstName": "First2",
+          "MiddleName": "Middle2",
+          "BirthDate": "2007-11-16T00:00:00"
+        }
+      ]
+    }
+  ],
+  "Defences": [
+    {
+      "Id": 1,
+      "Name": "Defence 1",
+      "DefenseDate": "2018-10-08T23:05:00",
+      "Link": "Link1",
+      "Location": "Location1",
+      "IsRemote": false
+    },
+    {
+      "Id": 2,
+      "Name": "Defence 2",
+      "DefenseDate": "2022-01-20T22:14:00",
+      "Link": "Link2",
+      "Location": "Location2",
+      "IsRemote": true
+    }
+  ],
+  "DefenceParticipants": [
+    {
+      "Id": 9,
+      "DefenceId": 1,
+      "ParticipantId": 4,
+      "Role": 0,
+      "Defence": {
+        "Id": 1,
+        "Name": "Defence 1",
+        "DefenseDate": "2018-10-08T23:05:00",
+        "Link": "Link1",
+        "Location": "Location1",
+        "IsRemote": false
+      },
+      "Participant": {
+        "Id": 4,
+        "LastName": "Last2",
+        "FirstName": "First2",
+        "MiddleName": "Middle2",
+        "BirthDate": "1953-06-12T00:00:00"
+      }
+    },
+    {
+      "Id": 10,
+      "DefenceId": 1,
+      "ParticipantId": 7,
+      "Role": 1,
+      "Defence": {
+        "Id": 1,
+        "Name": "Defence 1",
+        "DefenseDate": "2018-10-08T23:05:00",
+        "Link": "Link1",
+        "Location": "Location1",
+        "IsRemote": false
+      },
+      "Participant": {
+        "Id": 7,
+        "LastName": "Last1",
+        "FirstName": "First1",
+        "MiddleName": "Middle1",
+        "BirthDate": "1999-07-14T00:00:00"
+      }
+    }
+  ]
+}

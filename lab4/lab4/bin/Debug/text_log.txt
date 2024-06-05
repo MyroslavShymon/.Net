@@ -1,0 +1,24 @@
+[07.05.2024 11:11:37] [Normal] Main: Application started
+[07.05.2024 11:11:37] [Error] Database: Connection failed
+[07.05.2024 11:11:37] [Warning] Main: Memory usage high
+[07.05.2024 11:14:00] [Normal] Main: Application started
+[07.05.2024 11:14:00] [Error] Database: Connection failed
+[07.05.2024 11:14:00] [Warning] Main: Memory usage high
+[07.05.2024 11:14:02] [Normal] Main: Application started
+[07.05.2024 11:14:02] [Error] Database: Connection failed
+[07.05.2024 11:14:02] [Warning] Main: Memory usage high
+[07.05.2024 11:14:05] [Normal] Main: Application started
+[07.05.2024 11:14:05] [Error] Database: Connection failed
+[07.05.2024 11:14:05] [Warning] Main: Memory usage high
+[07.05.2024 11:17:08] [Normal] Main: Application started
+[07.05.2024 11:17:08] [Error] Database: Connection failed
+[07.05.2024 11:17:08] [Warning] Main: Memory usage high
+[14.05.2024 15:54:14] [Normal] Main: Application started
+[14.05.2024 15:54:14] [Error] Database: Connection failed
+[14.05.2024 15:54:14] [Warning] Main: Memory usage high
+[14.05.2024 16:26:05] [Normal] Main: Application started
+[14.05.2024 16:26:05] [Error] Database: Connection failed
+[14.05.2024 16:26:05] [Warning] Main: Memory usage high
+[28.05.2024 16:30:36] [Normal] Main: Application started
+[28.05.2024 16:30:36] [Error] Database: Connection failed
+[28.05.2024 16:30:36] [Warning] Main: Memory usage high
